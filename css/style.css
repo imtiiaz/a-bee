@@ -1,0 +1,969 @@
+/*
+  Theme Name: Name - Borlox HTML Template
+  Author: 
+  Support: admin@gmail.com
+  Description: Creative  HTML5 template.
+  Version: 1.0
+*/
+
+
+/* CSS Index 
+-----------------------------------
+
+1.  
+2.  
+3.  
+4.  
+5.  
+6.  
+7. 
+8. 
+
+*/
+
+:root {
+    --primary-color: rgba(13, 110, 139, 0.75);
+    --overlay-color: rgba(24, 39, 51, 0.85);
+    --menu-speed: 0.75s;
+}
+body {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: "Libre Franklin", Sans-serif;
+    color: #888888;
+}
+img {
+    display: inline-block;
+    vertical-align: middle;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+    outline: 0;
+}
+a:hover {
+    text-decoration: none;
+    outline: 0;
+}
+ul,
+li,
+ol {
+    list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+p,
+a {
+    margin: 0;
+    padding: 0;
+}
+.btn.focus,
+.btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Merriweather", Sans-serif;
+    color: #000000;
+}
+.form-control:focus {
+    box-shadow: 0 5px 32px rgba(103, 122, 141, 0.17);
+    border-radius: 0;
+}
+.full {
+    overflow: hidden;
+}
+
+/*==============Header Part=============*/
+
+header {
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.05);
+    -webkit-box-shadow: 0 5px 30px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0 5px 30px rgba(0, 0, 0, 0.05)
+}
+.header_top {
+    padding: 15px 0;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+    background: #fff;
+}
+.social_icon a {
+    font-size: 14px;
+    color: #888888;
+    margin-right: 10px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -os-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+}
+.social_icon a:hover {
+    color: #0291b9;
+}
+.header_right {
+    text-align: right;
+}
+.header_right .social_icon a {
+    font-size: 12px;
+    color: #B2B2B2;
+    text-transform: uppercase;
+}
+.header_right .social_icon a:hover {
+    color: #0291b9;
+}
+.header_right .social_icon a i {
+    margin-right: 5px;
+}
+.header_right .social_icon .cart {
+    display: inline-block;
+    position: relative;
+}
+.header_right .social_icon .cart:hover .cart_inner {
+    visibility: visible;
+    margin-top: 0;
+}
+.header_right .social_icon .cart .value {
+    background-color: #0291b9;
+    color: #FFFFFF;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 50%;
+    font-size: 12px;
+    text-align: center;
+    display: inline-block;
+}
+.header_right .social_icon .cart .cart_inner {
+    position: absolute;
+    right: 0;
+    padding: 20px;
+    margin-top: 30px;
+    background: #ffff;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+    visibility: hidden;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -os-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+}
+.header_right .social_icon .cart .cart_inner h3 {
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.header_right .social_icon .cart .cart_inner p {
+    font-family: "Merriweather", Sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center;
+}
+
+/*main menu*/
+
+.menu_fix {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+    background: #ffffff;
+    padding: 15px 0 !important;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.05);
+    -webkit-box-shadow: 0 5px 30px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0 5px 30px rgba(0, 0, 0, 0.05)
+}
+.main_menu {
+    padding: 25px 0;
+    background: #fff;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -os-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+}
+.main_menu .nav-item {
+    padding: 0 18px;
+}
+.main_menu .nav-item .nav-link {
+    font-family: "Libre Franklin", Sans-serif;
+    font-size: 14px;
+    padding: 5px;
+    text-transform: uppercase;
+    color: #B2B2B2;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -os-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    position: relative;
+}
+.main_menu .nav-item .nav-link:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0%;
+    background: #0291b9;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -os-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+}
+.main_menu .nav-item .nav-link:hover:after {
+    width: 100%;
+    background: #0291b9;
+}
+.main_menu .nav-item .nav-link:hover {
+    color: #0291b9;
+}
+
+/*Hamburger menu*/
+
+
+/* MENU STYLES */
+
+.menu-wrap {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    right: 55px;
+}
+.menu-wrap .toggler {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    cursor: pointer;
+    width: 55px;
+    height: 55px;
+    opacity: 0;
+}
+.menu-wrap .hamburger {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 55px;
+    height: 55px;
+    padding: 1rem;
+    background: #0291b9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hamburger Line */
+
+.menu-wrap .hamburger > div {
+    position: relative;
+    flex: none;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+}
+
+/* Hamburger Lines - Top & Bottom */
+
+.menu-wrap .hamburger > div::before,
+.menu-wrap .hamburger > div::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    width: 100%;
+    height: 2px;
+    background: inherit;
+}
+
+/* Moves Line Down */
+
+.menu-wrap .hamburger > div::after {
+    top: 10px;
+}
+
+/* Toggler Animation */
+
+.menu-wrap .toggler:checked + .hamburger > div {
+    transform: rotate(135deg);
+}
+
+/* Turns Lines Into X */
+
+.menu-wrap .toggler:checked + .hamburger > div:before,
+.menu-wrap .toggler:checked + .hamburger > div:after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+/* Rotate On Hover When Checked */
+
+.menu-wrap .toggler:checked:hover + .hamburger > div {
+    transform: rotate(225deg);
+}
+
+/* Show Menu */
+
+.menu-wrap .toggler:checked ~ .menu {
+    visibility: visible;
+}
+.menu-wrap .toggler:checked ~ .menu > div {
+    transform: scale(1);
+    transition-duration: var(--menu-speed);
+}
+.menu-wrap .toggler:checked ~ .menu > div > div {
+    opacity: 1;
+    transition: opacity 0.4s ease 0.4s;
+}
+.menu-wrap .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu-wrap .menu > div {
+    background: var(--overlay-color);
+    border-radius: 50%;
+    width: 200vw;
+    height: 200vw;
+    display: flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+    transition: all 0.4s ease;
+}
+.menu-wrap .menu > div > div {
+    text-align: center;
+    max-width: 90vw;
+    max-height: 100vh;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+.menu-wrap .menu > div > div > ul > li {
+    list-style: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+.menu-wrap .menu > div > div > ul > li > a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.4s ease;
+}
+
+/*==============Banner Part=============*/
+
+#banner_part {
+    background: url(../images/review/review_bg.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+.banner_content h1 {
+    font-size: 60px;
+    font-weight: 300;
+    line-height: 1.4;
+}
+.banner_content p {
+    color: #000000;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.8;
+    padding: 15px 0;
+}
+.button a.btn {
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    border: none;
+    color: #ffffff;
+    background-color: #0291b9;
+    border-radius: 0px 0px 0px 0px;
+    padding: 20px 45px;
+}
+.button a.btn:hover {
+    background: #B2B2B2;
+}
+
+/*==============Business Part=============*/
+
+#business_part {
+    padding: 100px 0;
+}
+.section_head h2 {
+    font-size: 35px;
+    font-weight: 300;
+    line-height: 1.35;
+    text-transform: capitalize;
+}
+.section_head p {
+    font-size: 18px;
+    line-height: 1.7;
+    padding-top: 30px;
+}
+#business_part .col-md-4:nth-child(2) .icon {
+    /*    color: #fff;*/
+}
+.business_item .icon {
+    font-size: 60px;
+    color: #0291b9;
+}
+.business_item h3 {
+    font-size: 24px;
+    line-height: 1;
+}
+.business_item p {
+    font-size: 18px;
+    line-height: 1.7;
+    padding-top: 20px;
+}
+
+/*========About Part=======*/
+
+#about_part {
+    background: url(../images/about/background.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+}
+#about_part .section_head h3 {
+    padding-top: 25px;
+    font-size: 18px;
+    line-height: 1.8;
+    text-transform: capitalize;
+}
+.book_logo {
+    padding-top: 30px;
+}
+
+/*==============Book Details Part=============*/
+
+#bookdetails_part {
+    padding: 100px 0;
+}
+#bookdetails_part .card {
+    border: 0;
+    border-radius: 0;
+}
+#bookdetails_part .card-header {
+    background: #ffff;
+    position: relative;
+    padding: 0;
+}
+#bookdetails_part .card-header .card_icon {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+#bookdetails_part .card-header .card_icon i {
+    font-size: 12px;
+    color: #0291b9;
+    border: 1px solid #0291b9;
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    transform: rotate(90deg);
+}
+#bookdetails_part .card-header .btn-link {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #000000;
+    padding: 25px 30px;
+    width: 100%;
+    text-align: left;
+}
+#bookdetails_part .card-header .collapsed .card_icon i {
+    transform: rotate(0);
+}
+#bookdetails_part .card-header .btn-link:hover {
+    text-decoration: none;
+}
+#bookdetails_part .card-header .btn-link:focus {
+    text-decoration: none;
+}
+
+/*==============Subscription Part=============*/
+
+#subscription_part {
+    padding: 100px 0;
+    background: url(../images/review/review_bg.jpeg);
+    background-size: cover;
+    background-position: ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#subscription_part .section_head p {
+    padding-bottom: 15px;
+}
+.subscribe form input {
+    width: 70%;
+    border: 1px solid #e0e0e8;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 80px;
+    background-color: #fff;
+    font-family: "Libre Franklin", Sans-serif;
+    font-size: 16px;
+}
+.subscribe form input:focus {
+    outline: 0;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0);
+}
+.subscribe .button {
+    display: inline;
+    margin-left: 10px;
+}
+
+/*==============Testimonial Part=============*/
+
+#testimonial_part {
+    background: url(../images/banner/banner-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+}
+.testimonial_item h3 {
+    font-size: 20px;
+    padding-top: 10px;
+}
+.testimonial_item span {
+    font-size: 14px;
+    color: #0291b9;
+}
+.testimonial_item p {
+    font-size: 18px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.slick-slide img {
+    display: inline-block;
+}
+#testimonial_part ul {
+    position: absolute;
+    left: 50%;
+    bottom: -70px;
+    transform: translateX(-50%);
+    display: flex;
+}
+#testimonial_part ul li button {
+    height: 16px;
+    width: 16px;
+    font-size: 0;
+    border: 1px solid #fff;
+    margin-right: 10px;
+    border-color: #0291b9;
+    background: #fff;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -os-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+}
+#testimonial_part ul li.slick-active button {
+    background: #0291b9;
+    border: transparent
+}
+#testimonial_part ul li button:focus {
+    outline: 0;
+}
+
+/*==============Review Part=============*/
+
+#review_part {
+    background: url(../images/about/background.jpeg);
+    padding: 100px 0;
+}
+#review_part .section_head p {
+    color: #000000;
+    font-family: "Merriweather", Sans-serif;
+}
+#review_part .section_head .button {
+    padding-top: 50px;
+}
+
+/*==============Contact Part=============*/
+
+#cart_part {
+    background: ;
+    padding: 100px 0;
+}
+.cart_content .cart_head h2 {
+    font-size: 24px;
+    color: #000000;
+    font-weight: 300;
+    line-height: 1.43;
+    text-transform: capitalize;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -os-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+}
+.cart_content .cart_head h2:hover {
+    color: #888888;
+}
+.cart_content .review {
+    font-size: 14px;
+    color: #fdbc32;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+.cart_content .review a {
+    margin-left: 15px;
+    color: #fdbc32;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -os-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+}
+.cart_content .review a:hover {
+    margin-left: 15px;
+    color: #0291b9;
+}
+.cart_content .price p {
+    font-size: 40px;
+    color: #000000;
+    text-align: left;
+}
+.cart_content .book_text p {
+    color: #888888;
+    font-size: 18px;
+    line-height: 1.7;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+.cart_content .add_cart .form-control {
+    font-size: 16px;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    display: inline-block;
+}
+.cart_content .add_cart .form-control:focus {
+    box-shadow: none;
+    border-radius: 0;
+}
+.add_cart .button {
+    display: inline-block;
+    margin-left: 20px;
+    position: relative;
+}
+.add_cart .button i {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: #fff;
+    padding-left: 25px;
+    padding-right: 20px;
+    font-size: 14px;
+}
+
+/*==============Contact Part=============*/
+
+#contact_part {
+    background: url(../images/about/background.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 100px;
+}
+#contact_part .section_head h2 {
+    padding-bottom: 40px;
+    padding-right: 10px;
+}
+#contact_part .section_head p {
+    font-size: 16px;
+    padding-top: 0;
+    padding-bottom: 30px;
+}
+#contact_part .icon ul li {
+    padding-bottom: 15px;
+}
+#contact_part .icon ul li a {
+    font-size: 16px;
+    color: #888888;
+}
+#contact_part .icon ul li:nth-child(3) a {
+    color: #0291b9;
+}
+#contact_part .icon ul li a:hover {
+    color: #0291b9;
+}
+#contact_part .icon ul li a i {
+    font-size: 18px;
+    color: #6ec1e4;
+    margin-right: 10px;
+}
+.contact_form {
+    font-size: 13px;
+    text-transform: capitalize;
+}
+.contact_form .form-control {
+    font-size: 16px;
+    background-color: #fff;
+    font-family: "Libre Franklin", Sans-serif;
+    border-radius: 0;
+    border: 1px solid #e0e0e8;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 40px;
+    margin-bottom: 15px;
+}
+.contact_form .btn {
+    margin-top: 30px;
+}
+
+/*==============Check Out Part=============*/
+
+#checkout_part {
+    padding: 100px 0;
+}
+#checkout_part form .form_head {
+    margin-bottom: 20px;
+}
+#checkout_part form .form_head h3 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 500;
+    background: #0291b9;
+    padding: 20px 0;
+    text-align: center;
+}
+#checkout_part form .form-control {
+    font-size: 16px;
+    margin-top: 15px;
+    padding: 15px 10px;
+    border-color: #0291b9;
+    border-radius: 0;
+    height: auto;
+}
+#checkout_part form .form-group .form-control {
+    border-color: #0291b9;
+    border-radius: 0;
+    text-transform: capitalize;
+    -webkit-appearance: none;
+}
+#checkout_part form .form-group {
+    position: relative;
+    margin: 0;
+}
+#checkout_part form .form-group:after {
+    content: "\f078";
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 55px;
+    line-height: 55px;
+    font-family: 'Font Awesome 5 free';
+    font-weight: 900;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    background: #0291b9;
+    pointer-events: none;
+}
+#checkout_part .form-control:focus {
+    box-shadow: none;
+}
+#checkout_part .back_shopping {
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+#checkout_part .back_shopping button.btn {
+    background: #0291b9;
+    border-radius: 0;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+}
+#checkout_part form .payment_method p {
+    background: #0291b9;
+    width: 100%;
+    color: #fff;
+    padding: 15px 15px;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.form-check {
+    padding-top: 10px;
+}
+#checkout_part form .payment_method img {
+    height: 24px;
+    width: 40px;
+}
+#checkout_part form .payment_method .international_cards {
+    padding-bottom: 5px;
+}
+
+/*==============All Books Part=============*/
+
+.book_items {
+    padding-top: 50px;
+}
+#allbooks_part .cart_content {
+    text-align: center;
+}
+#allbooks_part .cart_content .review {
+    margin: 10px 0;
+}
+#allbooks_part .cart_content .price p {
+    text-align: center;
+}
+#allbooks_part .add_cart {
+    padding-top: 10px;
+}
+
+/*=======About Author Part======*/
+
+#about-author_part {
+    background: url(../images/about/background.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 100px
+}
+#about-author_part .about_img img {
+    margin-top: -45px;
+}
+#about-author_part .section_head h3 {
+    padding-top: 25px;
+    font-size: 18px;
+    line-height: 1.8;
+    text-transform: capitalize;
+}
+.signature img {
+    width: 150px;
+}
+
+/*==============Cart-page Part=============*/
+
+#cart-page_part {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.table-responsive {
+    background: #fff;
+}
+.table th {
+    padding: 15px;
+}
+.table td,
+.table th {
+    vertical-align: middle;
+    font-weight: 400;
+    color: #000000;
+    border-top: 1px solid #0291b9;
+    text-align: center;
+}
+.table thead {
+    background: #0291b9;
+}
+.table {
+    border: 1px solid #0291b9;
+}
+.table thead th {
+    border-bottom: 0;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 20px;
+}
+.table-responsive tbody tr th img {
+    max-width: 100px;
+}
+.table-responsive .pro_content .pro_text a {
+    font-size: 14px;
+    margin-left: 10px;
+    text-transform: capitalize;
+    color: #0291b9;
+}
+.total p {
+    display: inline-block;
+    margin: 0 20px;
+    text-transform: capitalize;
+}
+#cart-page_part .button a.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+/*==============Footer Part=============*/
+
+#footer_part {
+    padding: 100px;
+    background: black;
+}
+#footer_part p {
+    color: #888888;
+    font-family: "Merriweather", Sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 1.6;
+    letter-spacing: 0.6px;
+    padding: 30px 0;
+}
+
+/*=======Scroll Top=======*/
+
+.scroll_top i {
+    font-size: 16px;
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: #ffffff;
+    background: #0291b9;
+    right: 30px;
+    bottom: 30px;
+    position: fixed;
+    cursor: pointer;
+    z-index: 9999;
+}
